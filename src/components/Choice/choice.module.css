@@ -1,0 +1,21 @@
+.choice_container {
+  display: flex;
+  flex-direction: row;
+}
+.choice_container input[type='text'] {
+  padding: 0;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  height: fit-content;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+.add_button {
+  margin-left: 10px;
+  background-color: rgb(99, 99, 222);
+  color: white;
+  padding: 1px 10px 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}

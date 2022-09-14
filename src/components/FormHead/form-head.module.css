@@ -1,0 +1,29 @@
+.container {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 10px;
+  width: 50%;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 2rem;
+}
+.form_name {
+  padding: 10px;
+  width: stretch;
+  margin-bottom: 1rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  font-size: 28px;
+}
+.form_name::placeholder {
+  font-size: 28px;
+}
+.form_description {
+  padding: 10px;
+  width: stretch;
+  height: 100px;
+}
+.form_description::placeholder {
+  font-size: 18px;
+}

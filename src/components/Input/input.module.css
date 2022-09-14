@@ -1,0 +1,177 @@
+.container {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px 10px;
+  width: 50%;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 1rem;
+}
+.remove_button {
+  text-align: end;
+}
+.remove_icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.remove_icon:hover {
+  color: rgb(99, 99, 222);
+}
+.question {
+  padding: 10px;
+  width: stretch;
+  margin-bottom: 1rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  font-size: 20px;
+}
+
+.form_name::placeholder {
+  font-size: 20px;
+}
+
+.answer_text {
+  padding: 10px;
+  width: stretch;
+  margin-bottom: 1rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(183, 183, 183);
+  font-size: 16px;
+}
+
+.answer_file_container {
+  text-align: center;
+}
+
+.answer_file {
+  position: absolute;
+  opacity: 0;
+}
+
+.answer_file_container label {
+  background-color: rgb(99, 99, 222);
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.answer_file:focus + label,
+.answer_file + label:hover,
+.answer_file:hover + label {
+  background-color: rgb(53, 53, 139);
+}
+
+input[type=file], /* FF, IE7+, chrome (except button) */
+input[type=file]::-webkit-file-upload-button {
+  /* chromes and blink button */
+  cursor: pointer;
+}
+
+.answer_slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.answer_slider:hover {
+  opacity: 1;
+}
+
+.answer_slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(80, 80, 188); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.answer_slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(80, 80, 188); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.required_container {
+  display: flex;
+  align-items: center;
+}
+
+.required_container span {
+  margin-right: 1rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 74px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
